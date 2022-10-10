@@ -17,10 +17,10 @@
             <a class="nav-link" aria-current="page" href="/home">Home🏠   |</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Book appointment📅   |</a>
+            <a class="nav-link" href="/patientbookapp"> Book appointment📅   |</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"> Doctors on-call🧑‍⚕️   |</a>
+            <a class="nav-link" href="/doctorsdetails"> Doctors on-call🧑‍⚕️   |</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"> My appointment🗓️   |</a>
@@ -82,16 +82,35 @@
 </div>
 </div>
 
+<div class="container" style="margin-top :40px;">
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+  <img class="card-img-bottom" src="..." alt="Card image cap">
+</div>
+</div>
+
 
 
 
 
 
 <div class="container" style="margin-top :40px;">
-    <div class="text-center"><h5>Where are we located?📍</h5></div>
+    <div class="text-center"><h5>Plan your visit📍</h5></div>
     <div class="mapouter mx-auto"><div class="gmap_canvas"><iframe width="1080" height="513" id="gmap_canvas" src="https://maps.google.com/maps?q=inti%20penang&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:513px;width:1080px;}</style><a href="https://www.embedgooglemap.net">embedded google search</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:513px;width:1080px;}</style>
     </div>
 </div>    
 </div>
-
+    </div>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © made by:
+    <a class="text-dark" href="WWW.heartcenter.com">Heart center healthcare providers</a>
+  </div>
+  <!-- Copyright -->
+</footer>
 @endsection

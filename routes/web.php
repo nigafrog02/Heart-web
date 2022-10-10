@@ -10,7 +10,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
+Route::get('/patientbookapp',[App\Http\Controllers\HomeController::class, 'p_index'])->name('patientbookapp');
+Route::get('/patientmakebooking/{doctorCategory_exDoctorID}',[App\Http\Controllers\HomeController::class, 'p_make_index'])->name('patientmakebooking');
+Route::get('/doctorsdetails',[App\Http\Controllers\HomeController::class, 'doc_detail_index'])->name('doctorsdetails');
 
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() { //calls laravel built in Auth with middleware to let only admin to access dashboard , isAdmin checks user roles
 
