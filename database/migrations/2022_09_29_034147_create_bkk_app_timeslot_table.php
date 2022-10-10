@@ -17,9 +17,10 @@ class CreateBkkAppTimeslotTable extends Migration
             $table->bigIncrements('appointmentID');
             $table->date('availableDate');
             $table->dateTime('availableTime'); 
-            $table->string('doctorName', 50);
             $table->tinyInteger('doctor_availability')->default('0'); // doctor's availability
             $table->String('status', 15);
+            $table->string('doctorName', 50);
+ 
            
         });
     }

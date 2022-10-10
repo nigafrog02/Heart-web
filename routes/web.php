@@ -14,19 +14,38 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() { //calls laravel built in Auth with middleware to let only admin to access dashboard , isAdmin checks user roles
 
+    //admin dashboard page
     Route::get('/dashboard',[App\Http\Controllers\Admin\DashboardController::class,'index']);
 
-    Route::get('category',[App\Http\Controllers\Admin\CategoryController::class,'index']);
-    Route::get('add-category',[App\Http\Controllers\Admin\CategoryController::class,'create']); //calling create function in category controller
-    Route::post('add-category',[App\Http\Controllers\Admin\CategoryController::class,'store']); // store function 
-    Route::get('edit-category/{category_id}',[App\Http\Controllers\Admin\CategoryController::class,'edit']);
-    Route::put('update-category/{category_id}',[App\Http\Controllers\Admin\CategoryController::class,'update']); //prefix is admin so no need /admin
-    //Route::get('delete-category/{category_id}',[App\Http\Controllers\Admin\CategoryController::class,'delete']);
-    Route::post('delete-category',[App\Http\Controllers\Admin\CategoryController::class,'delete']);
+    //booking time slot page
+    Route::get('bktimeslotcategory',[App\Http\Controllers\Admin\DoctorController::class, 'index2']);
 
-    Route::get('users',[App\Http\Controllers\Admin\UserController::class,'index']); // called index bcs it returns the view 
-    Route::get('user/{user_id}',[App\Http\Controllers\Admin\UserController::class,'edit']);
-    Route::put('update-user/{user_id}',[App\Http\Controllers\Admin\UserController::class,'update']);
+    Route::get('edit-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'edit']);
+
+    Route::put('update-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'update']);
+
+    Route::post('delete-doctor',[App\Http\Controllers\Admin\DoctorController::class, 'destroy']);
+
+    //doctor page
+    Route::get('doctorcategory',[App\Http\Controllers\Admin\DoctorController::class, 'index']);
+
+    Route::get('add-doctor',[App\Http\Controllers\Admin\DoctorController::class, 'create']);
     
+    Route::post('add-doctor',[App\Http\Controllers\Admin\DoctorController::class, 'store']);
+
+    Route::get('edit-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'editBk']);
+
+    Route::put('update-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'updateBk']);
+
+    Route::post('delete-doctor',[App\Http\Controllers\Admin\DoctorController::class, 'destroy']);
+
+    //user page 
+    Route::get('users',[App\Http\Controllers\Admin\UserController::class,'index']); 
+
+    Route::get('edit-user/{userCategory_id}',[App\Http\Controllers\Admin\UserController::class, 'edit']);
+
+    Route::put('update-user/{user_id}',[App\Http\Controllers\Admin\UserController::class,'update']);
+
+    Route::post('delete-user',[App\Http\Controllers\Admin\UserController::class, 'destroy']);
 
 });
