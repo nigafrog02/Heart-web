@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Auth;
 class BookingHistoryController extends Controller
 {
     
-    public function Bkstore(BookingHistoryFormRequest $request,$doctorcategory_exDoctorID) //for validation requests
+    public function Bkstore(BookingHistoryFormRequest $request) //for validation requests
     {
         
         $data = $request->validated();
@@ -30,10 +30,7 @@ class BookingHistoryController extends Controller
 
         $bookingHistory->save();
 
-        $doctorcategory = doctorcategory::find($doctorcategory_exDoctorID);
-        $doctorcategory->doctor_availability = ['0'];
-        $doctorcategory->update();
-
+        
         return redirect('/patientbookapp');
     }
 

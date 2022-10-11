@@ -51,7 +51,7 @@
              </div> 
         @endif
 
-        <form action="{{ url('/addconfirmedbooking/'.$doctorcategory->exDoctorID)  }}" method="POST" enctype="multipart/form-data"> <!-- trying-->
+        <form action="{{ url('/addconfirmedbooking/'}}" method="POST" enctype="multipart/form-data"> 
             @csrf
             
 
