@@ -51,9 +51,9 @@
              </div> 
         @endif
 
-        <form action="#" method="POST" enctype="multipart/form-data">
+        <form action="{{ url('/addconfirmedbooking/'.$doctorcategory->exDoctorID)  }}" method="POST" enctype="multipart/form-data"> <!-- trying-->
             @csrf
-            @method('PUT')
+            
 
             <div class= "mb-3">
                 <label for="">Your name</label>
@@ -62,18 +62,18 @@
 
             <div class= "mb-3">
                 <label for="">Your email</label>
-                <input type="text" name="Email" class="form-control">
+                <input type="text" name="patientEmail" class="form-control">
             </div>
 
             <div class= "mb-3">
                 <label for="">Your phone number</label>
-                <input type="text" name="phone" class="form-control">
+                <input type="text" name="patientPhone" class="form-control">
             </div>
 
             <div class= "mb-3">
                 <label for="">Gender</label>
                 <!-- <input type="text" name="foodCategories" class="form-control"> -->
-                <select name="gender" class="form-control" >
+                <select name="patientGender" class="form-control" >
                 <option value="M">Male</option>
                 <option value="F">Female</option>
                 </select>
@@ -86,23 +86,23 @@
            
               <div class= "mb-3" >
               <label for="">Specialized field</label>
-                <input type="text" name="doctorName"  value="{{$doctorcategory->Specialist}}" class="form-control" readonly="readonly">
+                <input type="text" name="specialist"  value="{{$doctorcategory->Specialist}}" class="form-control" readonly="readonly">
             </div>
 
             <div class= "mb-3">
                 <label for="">Booking Date</label></br>
-                <input type="date" id="availableDate" name="availableDate" value="{{$doctorcategory->availableDate}}" readonly="readonly">
+                <input type="date" id="bookingDate" name="bookingDate" value="{{$doctorcategory->availableDate}}" readonly="readonly">
             </div>
 
             <div class= "mb-3">
                 <label for="">Booking Time</label>
-                <input type="text" name="doctorName"  value="{{$doctorcategory->availableTime}}" class="form-control" readonly="readonly">
+                <input type="text" name="bookingTime"  value="{{$doctorcategory->availableTime}}" class="form-control" readonly="readonly">
             </div>
 
             <div class= "mb-3">
                 <label for="">Venue</label>
                 <!-- <input type="text" name="foodCategories" class="form-control"> -->
-                <input type="text" name="doctorName"  value="{{$doctorcategory->venues}}" class="form-control" readonly="readonly">
+                <input type="text" name="venue"  value="{{$doctorcategory->venues}}" class="form-control" readonly="readonly">
             </div>
 
         
