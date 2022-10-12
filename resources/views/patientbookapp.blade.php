@@ -71,7 +71,7 @@
                          <td>{{$item->availableTime}}</td>
                          <td>{{$item->venues}}</td>
                          <td>
-                              <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Doctor details</a>
+                              <a href="/doctorsdetails" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Doctor details</a>
                          </td>
 
                          <td> 

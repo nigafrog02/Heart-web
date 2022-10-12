@@ -67,12 +67,12 @@
                          <td>{{$item->doctor_availability}}</td>
                          <td>{{$item->venues}}</td>
                          <td>
-                              <a href="{{url('admin/edit-doctor/'.$item->exDoctorID) }}" class="btn btn-success">Edit</a>
+                              <a href="{{url('admin/edit-doctor/'.$item->exDoctorID) }}" class="btn btn-success">Edit Timeslot</a>
                          </td>
 
                          <td> 
                              <!-- <a href="{{url('admin/delete-doctor/'.$item->exDoctorID) }}"  class="btn btn-danger">Delete</a> -->
-                             <button type="button" class="btn btn-danger deleteUserBtn" value="{{ $item->exDoctorID}} ">Delete</button>
+                             <button type="button" class="btn btn-danger deleteUserBtn" value="{{$item->exDoctorID}} ">Delete</button>
                          </td>
                     </tr>
                     @endforeach

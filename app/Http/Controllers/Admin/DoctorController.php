@@ -154,6 +154,11 @@ class DoctorController extends Controller
 
     }
 
+    public function update_status($doctorcategory_exDoctorID)
+    {
+        $doctorcategory = doctorcategory::find($doctorcategory_exDoctorID)->update(array('doctor_availability' => '0'));
+    }
+
 
     public function destroy(Request $request)
     {
@@ -170,7 +175,7 @@ class DoctorController extends Controller
             
             return redirect('admin/doctorcategory')->with('message','Doctor Deleted Succesfully!');
         }else{
-
+            
             return redirect('admin/doctorcategory')->with('message','Doctor Not Deleted Succesfully!');
         }
     }

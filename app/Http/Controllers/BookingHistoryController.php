@@ -30,14 +30,9 @@ class BookingHistoryController extends Controller
 
         $bookingHistory->save();
 
-        
-        return redirect('/patientbookapp');
-    }
-
-    public function Alter($doctorcategory_exDoctorID)
-    {
+        $doctorcategory = doctorcategory::where('doctorName', '=',$data['doctorName'])->where('availableDate','=',$data['bookingDate'])->where('availableTime','=',$data['bookingTime'])->update(array('doctor_availability' => '0'));
 
         
-        return redirect('/patientbookapp');
+        return redirect('/patientbookapp')->with('message','Booking made successfully!');
     }
 }

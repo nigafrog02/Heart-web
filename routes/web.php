@@ -14,7 +14,7 @@ Route::get('/patientbookapp',[App\Http\Controllers\HomeController::class, 'p_ind
 Route::get('/patientmakebooking/{doctorCategory_exDoctorID}',[App\Http\Controllers\HomeController::class, 'p_make_index'])->name('patientmakebooking');
 Route::get('/doctorsdetails',[App\Http\Controllers\HomeController::class, 'doc_detail_index'])->name('doctorsdetails');
 Route::post('/addconfirmedbooking',[App\Http\Controllers\BookingHistoryController::class, 'Bkstore'])->name('addconfirmedbooking');
-Route::put('/Alter_avai/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'Alter_avai']);
+
 
 //Route::get('/model',[])
 
@@ -27,6 +27,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() { //cal
     Route::get('bktimeslotcategory',[App\Http\Controllers\Admin\DoctorController::class, 'index2']);
 
     Route::get('edit-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'edit']);
+
+    Route::put('update_status/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'update_status']); //???
 
     Route::put('update-doctor/{doctorCategory_exDoctorID}',[App\Http\Controllers\Admin\DoctorController::class,'update']);
 

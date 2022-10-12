@@ -23,7 +23,7 @@
         <form action="{{ url('admin/update-doctor/'.$doctorcategory->exDoctorID)  }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
-
+            
             <div class= "mb-3">
                 <label for="">Name</label>
                 <input type="text" name="doctorName" value="{{$doctorcategory->doctorName}}" class="form-control">
