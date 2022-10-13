@@ -57,3 +57,8 @@ Route::prefix('admin')->middleware(['auth','isAdmin'])->group(function() { //cal
     Route::post('delete-user',[App\Http\Controllers\Admin\UserController::class, 'destroy']);
 
 });
+
+Route::prefix('Doctor')->middleware(['auth','isDoctor'])->group(function() {
+
+
+});

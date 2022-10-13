@@ -39,6 +39,12 @@ class LoginController extends Controller
         {
             return redirect('/home')->with('status', 'Logged in successful');
         }
+
+        else if (Auth::user()->role_as == '2')
+        {
+            return redirect('http://127.0.0.1:5000/');
+        }
+
         else
         {
             return redirect('/');

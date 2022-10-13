@@ -41,7 +41,7 @@
       <div class="text-white">
         <h1 class="mb-3"> Consult us </h1>
         <h4 class="mb-3">before it's too late</h4>
-        <a class="btn btn-outline-light btn-lg" href="#!" role="button">Book appoinment now!</a>
+        <a class="btn btn-outline-light btn-lg" href="/patientbookapp" role="button">Book appoinment now!</a>
       </div>
     </div>
   </div>
@@ -54,9 +54,9 @@
 <div class="card border-primary mb-3 mx-auto" style="width: 18rem;">
   <img src="https://images.pexels.com/photos/9162030/pexels-photo-9162030.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">How does sleep affects your heart?</h5>
+    <p class="card-text">Sleeping is crucial for a person's health and also affects how your heart beats in day and night time .</p>
+    <a href="#" class="btn btn-primary">Read more ></a>
   </div>
   </div>
 </div>
@@ -64,9 +64,9 @@
 <div class="card border-danger mb-3 mx-auto" style="width: 18rem;">
   <img src="https://images.pexels.com/photos/887349/pexels-photo-887349.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">How do i take good care of my heart?</h5>
+    <p class="card-text">These are the top 3 things you should stop doing to maintain the healthy of your heart condition.</p>
+    <a href="#" class="btn btn-primary">Read more ></a>
   </div>
   </div>
 </div>
@@ -74,9 +74,9 @@
 <div class="card border-info mb-3 mx-auto" style="width: 18rem;">
   <img src="https://images.pexels.com/photos/3786166/pexels-photo-3786166.jpeg?auto=compress&cs=tinysrgb&w=1600" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">True story about blood tests that saves lives</h5>
+    <p class="card-text">Why wait ? Take your blood tests now in heart center it might help saving your life. </p>
+    <a href="#" class="btn btn-primary">Read more ></a>
   </div>
   </div>
 </div>
@@ -85,11 +85,16 @@
 <div class="container" style="margin-top :40px;">
 <div class="card">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <h5 class="card-title">Why us?</h5>
+    <p class="card-text">Heart center originally opened to the public on 28th June 1990 .
+
+With over 25 years in healthcare services, Heart center offers Specialists from diverse medical & surgical disciplines and by a wide range of cutting-edge medical equipment.
+
+Our pledge Care For Life, Heart center is committed to offering advanced medical care through innovative and efficient services, creating an environment of continuous quality improvement in ensuring good health of our patients.</p>
+    <p class="card-text">Operating Hours: Mon-sun = 10a.m. ~ 12p.m.</p>
+    <p class="card-text"><small class="text-muted">Hotline: +60124363432</small></p>
   </div>
-  <img class="card-img-bottom" src="..." alt="Card image cap">
+  <img class="card-img-bottom" src="https://images.pexels.com/photos/3957987/pexels-photo-3957987.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Card image cap">
 </div>
 </div>
 
